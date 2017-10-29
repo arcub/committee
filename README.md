@@ -32,5 +32,5 @@ The document below will show you the initiation policy for the Aberystwyth Robot
 
 ## License
 
-Documents are owned by Aberystwyth Robotics Club University Branch in association with Aberystwyth Students Union.
+Documents are owned by Aberystwyth Robotics Club University Branch in association with Aberystwyth University and Aberystwyth Students Union.
 
