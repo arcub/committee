@@ -1,0 +1,306 @@
+% Template for documenting your Arduino projects
+% Author:   Luis José Salazar-Serrano
+%           totesalaz@gmail.com / luis-jose.salazar@icfo.es
+%           http://opensourcelab.salazarserrano.com
+
+%%% Template based in the template created by Karol Kozioł (mail@karol-koziol.net)
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage[UKenglish]{babel}% http://ctan.org/pkg/babel
+\usepackage[UKenglish]{isodate}% http://ctan.org/pkg/isodate
+
+\renewcommand\familydefault{\sfdefault}
+\usepackage{tgheros}
+\usepackage[defaultmono]{droidmono}
+
+\usepackage{amsmath,amssymb,amsthm,textcomp}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{lastpage}
+\usepackage{multicol}
+\usepackage{tikz}
+\usepackage{courier}
+\usepackage[hidelinks]{hyperref}
+
+\usepackage{geometry}
+\geometry{total={210mm,297mm},
+left=25mm,right=25mm,%
+bindingoffset=0mm, top=20mm,bottom=20mm}
+
+
+\linespread{1.3}
+
+%\newcommand{\linia}{\rule{\linewidth}{0.5pt}}
+
+% my own titles
+%\makeatletter
+%\renewcommand{\maketitle}{
+%\begin{center}
+%\vspace{2ex}
+%{\huge \textsc{\@title}}
+%\vspace{1ex}
+%{\huge \textsc{\@subtitle}}
+%\vspace{1ex}
+%\\
+%\linia\\
+%\@author \hfill \@date
+%\vspace{4ex}
+%\end{center}
+%}
+%\makeatother
+%%%
+
+% custom footers and headers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{Version 0.2 | Review}
+\chead{ARCUB - Constitution}
+\rhead{\today}
+\lfoot{Tomos Fearn (tomos@aberrobotics.club)}
+\cfoot{}
+\fancyfoot[R]{Page \thepage\ of \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+%
+
+% code listing settings
+\usepackage{listings}
+
+\lstset{%
+  language = Octave,
+  lineskip={-1.5pt},
+  backgroundcolor=\color{white},   
+  basicstyle=\footnotesize\ttfamily,       
+  breakatwhitespace=false,         
+  breaklines=true,                 
+  captionpos=b,                   
+  commentstyle=\color{gray},    
+  deletekeywords={...},           
+  escapeinside={\%*}{*)},          
+  extendedchars=true,              
+  frame=single,                    
+  keepspaces=true,                 
+  keywordstyle=\color{orange},       
+  morekeywords={*,...},            
+  numbers=left,                    
+  numbersep=5pt,                   
+  numberstyle=\footnotesize\color{gray}, 
+  rulecolor=\color{black},         
+  rulesepcolor=\color{blue},
+  showspaces=false,                
+  showstringspaces=false,          
+  showtabs=false,                  
+  stepnumber=1,                    
+  stringstyle=\color{orange},    
+  tabsize=2,                       
+  title=\lstname,
+  emphstyle=\bfseries\color{blue}%  style for emph={} 
+} 
+
+%% language specific settings:
+\lstdefinestyle{Arduino}{%
+    language = Octave,
+    keywords={void, int boolean},%                 define keywords
+    morecomment=[l]{//},%             treat // as comments
+    morecomment=[s]{/*}{*/},%         define /* ... */ comments
+    emph={HIGH, INPUT, OUTPUT, LOW}%        keywords to emphasize
+}
+
+
+%%%----------%%%----------%%%----------%%%----------%%%
+
+\begin{document}
+
+\title{Aberystwyth Robotics Club University Branch\\Official Documentation\\Constitution}
+\author{Tomos Fearn (tomos@aberrobotics.club)}
+\date{\parbox{\linewidth}{\centering%
+  \today\endgraf\bigskip
+  Version 0.2 \hspace*{3cm} Review\endgraf\medskip
+  %Dept.\ of Physics \endgraf
+  %ABC College
+  }}
+
+
+
+\maketitle
+\begin{center}
+\includegraphics[width=5cm]{img/logo.png}
+\end{center}
+\newpage
+\tableofcontents
+\newpage
+
+\abstract{Constitution of the Aberystwyth Robotics Club University Branch}
+
+
+\section{General}
+\subsection{Society Name}
+The name of the society/club shall be the Aberystwyth Robotics Club University Branch and shall be allowed to be abbreviated to ARCUB. The society may also be referred to as Aberystwyth Robotics Club or abbreviated to ARC. This however is the name of the outreach club by IMPACS. For all official documentation, the society must be referred to as Aberystwyth Robotics Club University Branch.
+
+\subsection{Previous Documentation}
+All previous Constitutions are hereby null and void.
+
+\section{The Mission}
+The mission for Aberystwyth Robotics Club University Branch shall be to inspire undergraduates to design, build and program their own robotic chassis.
+
+\section{AberSU and AberSoc/Club Sporty rules}
+The society/club shall be up to date, and in compliance with all rules and regulations concerning AberSU and AberSoc/Club Sporty.
+
+\section{Social Media and Contacts}
+\subsection{Contacts and Student Details}
+On induction to the ARCUB members are informed to sign up through the students union \url{http://abersu.co.uk/society/robotics}\newline
+This will contain the students name and email address and can be used as a platform to email all members.
+
+\subsection{Social Media and Emails}
+\begin{itemize}[nolistsep]
+  \item Our website is \url{www.students.aberrobotics.club}
+  \item Our email address is students@aberrobotics.club
+  \item Our Facebook group is www.facebook.com/groups/arcub
+  \item Our Twitter is www.twitter.com/aberrobotclub
+\end{itemize}
+Once a member has signed up to the Students Union, they are automatically enrolled on to the emailing list.
+
+\section{Storage for committee}
+Google Drive will be used to store private files for the committee. The shared folder for the committee will be hosted by the account aberroboticsclub@gmail.com and is named ‘ARCUB’.\newline
+Committee members will need to be manually added to the sharing list on Google Drive.\newline
+All formal documents should be saved as \LaTeX \textbf{.tex} files and compiled using pdflatex for portability and layout consistency between different operating systems.
+
+\section{GIT Project Repositories}
+A GitHub organisation account has been created to manage projects away from SIMBA (outreach server). This account remains free as long as projects are publicly available (i.e. no private projects). User level access should be managed by those of the committee experienced in using GIT version control software.\newline
+\url{http://github.com/arcub}
+
+\section{Project Information and Instructions}
+All information on projects should be stored on GitHub where everyone can read the files - user level access can be granted to members so they can push files to the repository.\newline
+Website URL – \url{www.students.aberrobotics.club}
+Instructions should include design specification (the need and aim), hardware layout, software needed to get going, other details can follow.\newline
+All instructions to be as a \textbf{.md} or exported as a \textbf{.pdf} and uploaded to GitHub and the website \url{www.students.aberrobotics.club}.
+
+\section{Membership}
+A full year membership is £5.00, this will contribute towards equipment for the society such as electronics, consumables and robotic chassis.
+There are two types of membership:
+
+\subsection{Standard Membership}
+Standard Membership of Aberystwyth Robotics Club University Branch shall be a Full Member of the Aberystwyth University Students’ Union, as defined by the AberSU Union Constitution (Section 6), and have paid full current membership fees to Aberystwyth Robotics Club University Branch at the set amount of £0.00 Standard Members must also hold valid AberSoc/Club Sporty membership.
+
+\newpage
+\subsection{Associate Membership}
+Associate membership of Aberystwyth Robotics Club University Branch is available to non-Aberystwyth University students, who are affiliated with an individual society/sports club and thereby AberSoc/Club Sporty, on the basis of them having:
+\begin{enumerate}[nolistsep]
+  \item Expertise in a relevant area; or
+  \item Honorary membership as determined by the AberSU Activities Officer; or
+  \item Some other ground which AberSU deems appropriate.
+\end{enumerate}
+Associate Members are required to have paid full current membership fees to a AberSoc affiliated society/Club Sporty affiliated club.
+\begin{center}
+\textbf{This excludes members of staff at Aberystwyth University.}
+\end{center}
+
+\subsection{What happens when they don't meet the criteria?}
+Anybody who does not fulfil the above criteria of `member' will be prohibited from participating in AberSU society events. Societies who do not enforce this practice may be subjected to financial penalties or have AberSU privileges removed.
+
+\section{Committee}
+\subsection{Committee Positions}
+The Committee shall be made up of the following positions: President, Secretary, Treasurer.
+
+\subsection{Finance}
+The general and financial business of Aberystwyth Robotics Club University Branch shall be conducted by the committee, subject to this constitution and the view displayed by decisions members make as a whole at General Meetings.
+
+\subsection{Vacancies}
+Upon any vacancy occurring outside of normal election procedure, the Committee can vote on another member of the Committee to temporarily hold the vacant post until a by-election is held and the result is confirmed.
+
+\newpage
+\section{Elections of Committee Members and others}
+\subsection{Elections}
+All standard members of Aberystwyth Robotics Club University Branch have the right to vote in such an election. Elections shall take place in accordance to this constitution and through the manner of the `Alternative Vote System' (or any other system that produces a majority) and held by: (either a secret ballot or a show of hands).
+
+\subsection{Handovers}
+The election shall take place no less than 14 days after the notification has been sent out to all members of the date, time and place. It shall be held usually around Easter time, as this gives outgoing society/club committees to have a chance of a shadowing/handing over period, also AberSU to offer training on various areas before the end of the academic year.
+
+\subsection{Returning Officers}
+The returning officer shall be (whoever seems appropriate but constitutionally you can call on the Activities Officer or Society/Sports Officer to assist the election if you wish).
+
+\subsection{Time of Office - Term Time}
+The term of office for every committee member shall be one whole calendar year, or as appropriate based on the timing of committee elections.
+
+\subsection{Vacancies during Term Time}
+The committee will organise a by-election should a position become vacant before the annual elections, apply the same procedure used in the annual elections.
+
+\section{General Meetings}
+The Annual General Meeting shall be held on:\newline
+The business of the AGM shall be:
+\begin{enumerate}[nolistsep]
+  \item To receive reports from all of the committee on their activities in the last year;
+  \item To receive a financial report. This shall include: the accounts of the previous financial year and a budget for the current financial year;
+  \item To consider any motion, which has been submitted and seconded by any two standard members to the secretary (in time for circulation with the notice of the AGM);
+  \item To formally handover the elected positions from the outgoing committee to the incoming committee.
+  \item For any constitutional amendments to be ratified, and the constitution to be approved as accurate for the forthcoming academic year;
+  \item Any other business
+\end{enumerate}
+The Secretary/President shall give all members at least 14 days e-mail notification of the time and place of the AGM.\newline
+Notice and minutes of all Meetings and Committee Meetings shall be kept by the Secretary.\newline
+They shall be available through GitHub to all members.
+
+\section{Finance}
+\subsection{Who Looks after the Finance?}
+The finances of Aberystwyth Robotics Club University Branch shall be held primarily by the Treasurer and secondly by the President.\newline
+The Treasurer shall manage the accounts in an annual fashion with the accounting year ending in accordance with the handover of responsibilities each year.\newline
+The Treasurer shall keep and maintain all records of Aberystwyth Robotics Club University Branch accounts before passing them on to their successor.
+
+\subsection{Reporting Finance}
+The Treasurer shall submit the accounts of Aberystwyth Robotics Club University Branch to the AGM.
+
+\subsection{Where do we maintain Funds?}
+Aberystwyth Robotics Club University Branch shall maintain all of its funds within the AberSU Finance Office. All monies received shall be paid into the society/club account within the Finance Office in accordance with AberSU. All outgoing funds must have the approval of the mandate trained members.\newline
+All financial actions undertaken by the society/club must be in accordance with the AberSU rules, regulations and constitution.
+
+\section{Descriptions of Positions}
+\subsection{President}
+The President (or equivalent) shall be the main contact point for external communications with
+all external groups and individuals. This includes AberSU. They are further responsible for the smooth and effective running of the committee and the society/club, and shall be the final arbitrageur of disputes amongst the committee. They are responsible for creating the best environment for the committee and other members to operate in. They must ensure the general health and direction of the society/club is in accordance with the views of its members. They must carry out duties that are listed elsewhere in this constitution.
+
+\subsection{Secretary}
+The Secretary is responsible for organising meetings, events, and all aspects to do with the society/club. They are responsible for recording the minutes of all meetings, and are the main contact for receipt and outgoing administrative details of all events with regards to members and external organisations. This includes the AberSU. The secretary is bound to carry out all other duties stated elsewhere in this constitution.
+
+\subsection{Treasurer}
+The Treasurer's roles are described throughout this constitution and needs not further description.
+
+\section{Constitution and interpretation}
+\subsection{Amendments}
+Amendments to this constitution happen in the following fashion; the proposed Amendment
+must be submitted to the Committee not within 14 days of the AGM. The Committee will then scrutinize the proposed amendment and then suggest any changes that would be suitable. The proposed amendment is then proposed at the AGM where it must be ratified with a 70\% majority.
+
+\subsection{Action of Changes}
+Any changes to this constitution shall only come into force after the close of the AGM unless
+otherwise stated in the amendment.
+
+\subsection{Acceptance of Change}
+This constitution, after any votes on amendments have taken place at the society/club AGM,
+must be approved by 70\% majority in order to stand as a true and accurate authority of the members of the society for the forthcoming academic year.
+
+\subsection{What happens with the new constitution?}
+A copy of this constitution shall be kept by the secretary and distributed to members upon request. The AberSU Activities Officer shall also hold a copy. A copy shall also be added to the website, GitHub. The document version and the date will change including the document history at the bottom of the document.
+
+\subsection{Questioning the Constitution}
+In the event of any question of interpretation arising the committee shall have the power to act accordingly to its interpretation of the constitution, or, if it does not cover the issue, then a constitutional amendment should be presented by the President (or equivalent) at the next AGM.
+
+\newpage
+\section*{Document History}
+\begin{center}
+\begin{tabular}{ |c|c|c|c| } 
+\hline
+Version & Changed & Changed By & Date Changed \\
+\hline
+V0.1 & Initial Creation & Tomos Fearn - tomos@aberrobotics.club & 5th September 2017\\ 
+\hline
+V0.2 & Updated Layout & Tomos Fearn - tomos@aberrobotics.club & 29th October 2017\\
+\hline
+\end{tabular}
+\end{center}
+
+
+\end{document}
