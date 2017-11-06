@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.12.6)  29 OCT 2017 00:57
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2017.10.30)  6 NOV 2017 20:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1238,8 +1238,8 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 241.
  ) 
 Here is how much of TeX's memory you used:
  18287 strings out of 493304
- 306620 string characters out of 6139871
- 426515 words of memory out of 5000000
+ 306620 string characters out of 6139870
+ 426516 words of memory out of 5000000
  21341 multiletter control sequences out of 15000+600000
  39352 words of font info for 57 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -1247,7 +1247,7 @@ Here is how much of TeX's memory you used:
 {/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/share/texmf/fonts/
 enc/dvips/tex-gyre/q-ec.enc}</usr/share/texmf/fonts/type1/public/tex-gyre/qhvb.
 pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qhvr.pfb>
-Output written on code-of-conduct.pdf (5 pages, 112537 bytes).
+Output written on code-of-conduct.pdf (5 pages, 112542 bytes).
 PDF statistics:
  129 PDF objects out of 1000 (max. 8388607)
  116 compressed objects within 2 object streams
